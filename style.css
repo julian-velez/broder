@@ -1,0 +1,38 @@
+:root {
+  --border-repeat: stretch;
+  --border-style: ridge;
+  --border-image-slice: 120;
+  --border-image-width: 2.5rem;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+section {
+  text-align: center;
+  display: flex;
+  width: 10rem;
+  flex-wrap: nowrap;
+  padding: 2rem;
+  height: 10rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  font-family: georgia, "times new roman", times, serif;
+  border-image-source: url("https://img.freepik.com/free-vector/wave-gradient-background-illustration-vector_343694-1529.jpg?w=1380&t=st=1678987272~exp=1678987872~hmac=7566fde285fae277eaa8ac96106f16664227b8c641ceae222778c1d92c140d8d");
+  border-image-slice: var(--border-image-slice);
+  border-image-repeat: var(--border-repeat);
+  border-width: 2rem;
+  border-image-width: var(--border-image-width);
+  border-color: gray;
+  border-style: var(--border-style);
+  transition: all 0.3s ease;
+}
